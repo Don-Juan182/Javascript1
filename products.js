@@ -15,11 +15,29 @@ const products = [
     },
 ];
 
-const container = document.querySelector("container");
-
-console.log(container);
+const container = document.querySelector(".container");
  
+let html = "";
+
 for (let i = 0; i < products.length; i++) {
-console.log(products[i]);
+    let displayPrice ="Unavailable";
+
+if (products[i].price) {
+    displayPrice = products[i].price;
 }
 
+let colour = "green";
+
+if (products[i].soldOut) {
+
+    colour = "red";
+}
+
+    html += `<div class="product">
+            <h4 style="color: ${colour}">${products[i].name}</h4>
+            <dice>Price: ${displayPrice}</div>
+            </div>`;
+
+}
+
+container.innerHTML = html;
