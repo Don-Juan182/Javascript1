@@ -15,10 +15,10 @@ const products = [
     },
 ];
 
-const container = document.querySelector(".container");
+const container = document.querySelector("container");
 
 console.log(container);
-
+ 
 for (let i = 0; i < products.length; i++) {
 console.log(products[i]);
 }
