@@ -2,13 +2,24 @@ body {
     background: #ebebeb;
 }
 
-.game-container {
-    display: flex;
+button {
+    background: darkred;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-.game {
-    background: white;
-    border-radius: 1rem;
+button:disabled {
+    opacity: 0.1;
+}
+
+.container {
+    border: 1px solid lightgray;
     padding: 1rem;
-    margin: 1rem;
+    background: white;
+    max-width: 900px;
+    border-radius: 1rem;
+    margin: 0 auto;
 }
